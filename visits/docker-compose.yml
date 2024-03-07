@@ -1,0 +1,9 @@
+version: '3' # Docker compose version
+services:
+  redis-server:
+    image: 'redis'
+  node-app:
+    restart: 
+    build: .
+    ports:
+      - "4001:8081"
